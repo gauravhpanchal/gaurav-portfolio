@@ -46,7 +46,7 @@ const Contact = () => {
           }
         );
     } else {
-      console.log("Form reference is null");
+      console.log("Please try again later");
     }
   };
 
