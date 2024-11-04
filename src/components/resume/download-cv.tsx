@@ -8,12 +8,16 @@ const DownloadCV = () => {
       <div className="title-wrapper">
         <IconBox icon={IoCloudDownloadOutline} />
 
-        <a href="./cv.pdf" target="_blank" className="hyperlink-highlight">
+        <a
+          href="./Resume-Gaurav-Panchal.pdf"
+          target="_blank"
+          className="hyperlink-highlight"
+        >
           Download Hugo&apos;s full Curriculum Vitae/Resume (October 2024)
         </a>
       </div>
     </section>
   );
-}
+};
 
 export default DownloadCV;
