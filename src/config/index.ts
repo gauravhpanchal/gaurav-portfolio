@@ -19,9 +19,9 @@ const config: Config = {
     "Next.js",
     "React",
   ],
-  status: "Day ONE ⚡️",
+  status: "Full Stack Web Developer ⚡️",
   openGraph: {
-    url: "https://1chooo.com/",
+    url: "https://portfolio-web-gaurav.vercel.app/",
     type: "website",
     siteName: "Gaurav H Panchal | Full Stack Web Developer",
     title: "Gaurav H Panchal | Full Stack Web Developer",
@@ -29,7 +29,7 @@ const config: Config = {
       "I'm Gaurav H Panchal, a graduate with a Bachelor's degree from Mumbai University (MU) 🐿️, driven by a sincere passion for Software Engineering 💻.",
     images: [
       {
-        url: "https://docs.1chooo.com/images/cover-with-1chooo-com.png",
+        url: "https://portfolio-web-gaurav.vercel.app/",
         width: 1200,
         height: 630,
         alt: "Gaurav Cover Image",
