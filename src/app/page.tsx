@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import AboutText from '@/components/about/about-text';
-import GitHubStats from '@/components/about/github-stats';
-import TechStack from '@/components/about/tech-stack';
-import LifeStyles from '@/components/about/life-styles';
-import PageHeader from '@/components/page-header';
-import H4 from '@/components/markdown/h4';
-import config from '@/config';
+import AboutText from "@/components/about/about-text";
+import GitHubStats from "@/components/about/github-stats";
+import TechStack from "@/components/about/tech-stack";
+import LifeStyles from "@/components/about/life-styles";
+import PageHeader from "@/components/page-header";
+import H4 from "@/components/markdown/h4";
+import config from "@/config";
 
 const { about } = config;
 const { subHeader, pronouns } = about;
@@ -18,23 +18,25 @@ export const metadata: Metadata = {
 };
 
 const header =
-  preferredName === ''
+  preferredName === ""
     ? `About ${firstName} ${lastName} 👨🏻‍💻`
     : `About ${preferredName} 👨🏻‍💻`;
 
 const About = () => {
   return (
-    <article data-page=''>
+    <article data-page="">
       <PageHeader header={header} />
       {/* TODO: #157 */}
       <H4 text={`${subHeader} (${pronouns})`} />
       <br />
       <AboutText />
       <GitHubStats />
+      <div className="separator-no-line"></div>
       <TechStack />
+      <div className="separator-no-line"></div>
       <LifeStyles />
     </article>
   );
-}
+};
 
-export default About
+export default About;
