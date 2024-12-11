@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-
-import { GoogleAnalytics } from "@/components/google/ga";
 import Hello from "@/components/hello";
 import NavBar from "@/components/nav-bar";
 import SideBar from "@/components/side-bar";
@@ -14,7 +12,7 @@ const { openGraph } = config;
 
 import "./globals.css";
 
-const googleAnalyticId = "G-JGG75799PJ";
+
 
 export const metadata: Metadata = {
   title: title,
@@ -63,7 +61,7 @@ const RootLayout = (props: RootLayoutProps) => {
           </div>
         </main>
       </body>
-      <GoogleAnalytics gaId={googleAnalyticId} />
+      
     </html>
   );
 };
