@@ -1,10 +1,10 @@
 import type { Breakpoint } from "@/hooks/use-responsive-image-size";
 
-export const GITHUB_USERNAME = '1chooo';
-export const MEDIUM_USERNAME = '1chooo';
-export const TWITTER_USERNAME = '1chooo___';
-export const LINKEDIN_USERNAME = '1chooo';
-export const EMAIL = 'hugo970217@gmail.com';
+export const GITHUB_USERNAME = '';
+export const MEDIUM_USERNAME = '';
+export const TWITTER_USERNAME = '';
+export const LINKEDIN_USERNAME = '';
+export const EMAIL = '';
 
 export const POSTS_PER_PAGE = 8;
 
