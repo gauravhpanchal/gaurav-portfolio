@@ -205,7 +205,7 @@ management.
           company: "CityCabz",
           location: "Mumbai, India",
           role: "Web Developer",
-          duration: "Jul. 2023 - Jan. 2024",
+          duration: "Nov. 2022 - Jan. 2024",
           tasksMarkdown: `
 - Develop user friendly and mobilefirst approach websites for
 Tour and Travel Company.
