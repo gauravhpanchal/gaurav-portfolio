@@ -61,7 +61,7 @@ const config: Config = {
       // "#### $ ls -al Gaurav 👨🏻‍💻 (He/Him)", {/* TODO: #157 */}
       // "I obtained my Bachelor's degree from [Mumbai University 🐿️], driven by a *sincere passion* for **Software Engineering 💻.**",
       // `My current research interests include ***Programming Language Theory, Operating Systems, and Compilers.*** To gain practical experience, I developed my own ***<a href="https://en.wikipedia.org/wiki/Lisp_(programming_language)">Lisp</a>*** interpreter using **<a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a>** <sup>[[Code](https://github.com/1chooo/compiler-101)]</sup> and implemented [***Monkey Programming***](https://monkeylang.org/) Compiler with [**GO**](https://go.dev/) <sup>[[Code](https://github.com/1chooo/monkey-prog-lang)]</sup>.`,
-      "Skilled web developer with 1.5 years of professional experience in an Indian and USA based company, expert in JavaScript, React.js, and Next.js, NodeJS, MongoDB, Express. Passionate about creating efficient, visually appealing, and user-friendly websites. Committed to continuous learning and utilizing the latest web development technologies.",
+      "Skilled web developer with 2 years of professional experience in an Indian and USA based company, expert in JavaScript, React.js, and Next.js, NodeJS, MongoDB, Express. Passionate about creating efficient, visually appealing, and user-friendly websites. Committed to continuous learning and utilizing the latest web development technologies.",
       "In my spare time, I do workouts 💪🏻, street photography 📸, and speed Cubing 💠.",
       "**`Self-motivated, Team player, Love coding 👨🏻‍💻`**",
     ],
