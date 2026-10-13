@@ -14,6 +14,9 @@
     "blog",
     "markdown"
   ],
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@codesandbox/sandpack-react": "^2.19.3",
     "@emailjs/browser": "^4.4.1",
