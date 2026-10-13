@@ -8,23 +8,21 @@ import config from "@/config";
 const { title } = config;
 
 const { resume } = config;
-const { professionalExperiences } = resume;
-const { educations } = resume;
+const { professionalExperiences, educations, certifications, achievements } = resume;
 
 export const metadata: Metadata = {
   title: `Resume | ${title}`,
 };
 
-const profExp = <TimeLine data={professionalExperiences} />;
-const education = <TimeLine data={educations} />;
-
 const Resume = () => {
   return (
     <article data-page="">
       <PageHeader header="Gaurav's Resume" />
-      {/* <DownloadCV /> */}
-      {profExp}
-      {education}
+      <DownloadCV />
+      <TimeLine data={professionalExperiences} />
+      <TimeLine data={educations} />
+      {certifications && <TimeLine data={certifications} />}
+      {achievements && <TimeLine data={achievements} />}
     </article>
   );
 };

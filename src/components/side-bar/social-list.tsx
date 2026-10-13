@@ -35,7 +35,7 @@ const socialLinks = [
     icon: <SiUpwork />,
     name: "Upwork",
   },
-  { url: `./Resume-Gaurav-Panchal.pdf`, icon: <MdAttachment />, name: "CV" },
+  { url: `/GauravPanchalCV.pdf`, icon: <MdAttachment />, name: "CV" },
 ];
 
 const SocialList: React.FC = () => {

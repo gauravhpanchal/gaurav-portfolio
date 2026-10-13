@@ -1,13 +1,29 @@
 import { IconType } from "react-icons";
 
+export type TimelineItem = {
+  company: string;
+  location: string;
+  role: string;
+  duration: string;
+  tasksMarkdown: string;
+};
+
+export type TimelineSection = {
+  icon: IconType;
+  title: string;
+  items: TimelineItem[];
+};
+
+export type Education = TimelineSection;
+export type ProfessionalExperience = TimelineSection;
+
 export type Resume = {
   educations: Education;
   professionalExperiences: ProfessionalExperience;
+  certifications?: TimelineSection;
+  achievements?: TimelineSection;
 };
 
-/**
- * TODO: https://github.com/1chooo/1chooo.com/issues/98
- */
 export type ResumeProps = {
   name: string;
   title: string;
@@ -15,29 +31,5 @@ export type ResumeProps = {
     icon: IconType;
     title: string;
     text: string;
-  }[];
-};
-
-export type Education = {
-  icon: IconType;
-  title: string;
-  items: {
-    company: string;
-    location: string;
-    role: string;
-    duration: string;
-    tasksMarkdown: string;
-  }[];
-};
-
-export type ProfessionalExperience = {
-  icon: IconType;
-  title: string;
-  items: {
-    company: string;
-    location: string;
-    role: string;
-    duration: string;
-    tasksMarkdown: string;
   }[];
 };

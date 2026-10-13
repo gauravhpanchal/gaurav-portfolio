@@ -1,10 +1,9 @@
 import IconTitle from "./icon-title";
 import TimelineList from "./timeline-list";
-import type { ProfessionalExperience } from "@/types/resume";
-import type { Education } from "@/types/resume";
+import type { TimelineSection } from "@/types/resume";
 
 interface TimeLineProps {
-  data: ProfessionalExperience | Education;
+  data: TimelineSection;
 }
 
 const TimeLine: React.FC<TimeLineProps> = ({ data }) => {

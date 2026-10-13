@@ -12,7 +12,7 @@ const ContactsList: React.FC = () => {
   return (
     <ul className="contacts-list">
       <ContactItem icon={HiOutlineMail} title="Email">
-        <Link href="gauravhpanchal2@gmail.com" className="contact-link">
+        <Link href="mailto:gauravhpanchal2@gmail.com" className="contact-link">
           gauravhpanchal2@gmail.com
         </Link>
       </ContactItem>

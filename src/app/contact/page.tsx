@@ -19,7 +19,7 @@ const { title } = config;
 const Contact = () => {
   useEffect(() => {
     document.title = `Contact | ${title}`;
-  }, [title]);
+  }, []);
 
   const form = useRef<HTMLFormElement | null>(null);
 

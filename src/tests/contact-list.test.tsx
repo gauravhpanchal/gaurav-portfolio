@@ -21,19 +21,19 @@ describe("ContactsList", () => {
     render(<ContactsList />);
     const emailIcon = screen.getByTestId("icon-mail");
     const emailTitle = screen.getByText("Email");
-    const emailLink = screen.getByRole("link", { name: /hugo970217@gmail.com/i });
+    const emailLink = screen.getByRole("link", { name: /gauravhpanchal2@gmail.com/i });
 
     expect(emailIcon).toBeInTheDocument();
     expect(emailTitle).toBeInTheDocument();
     expect(emailLink).toBeInTheDocument();
-    expect(emailLink).toHaveAttribute("href", "mailto:hugo970217@gmail.com");
+    expect(emailLink).toHaveAttribute("href", "mailto:gauravhpanchal2@gmail.com");
   });
 
   it("renders the phone contact item correctly", () => {
     render(<ContactsList />);
     const phoneIcon = screen.getByTestId("icon-phone");
     const phoneTitle = screen.getByText("Phone");
-    const phoneInfo = screen.getByText("404 Not Found 📲");
+    const phoneInfo = screen.getByText("+91 8286112257 📲");
 
     expect(phoneIcon).toBeInTheDocument();
     expect(phoneTitle).toBeInTheDocument();
@@ -44,19 +44,19 @@ describe("ContactsList", () => {
     render(<ContactsList />);
     const calendarIcon = screen.getByTestId("icon-calendar");
     const birthdayTitle = screen.getByText("Birthday");
-    const birthdayDate = screen.getByText("Jan. 27, 2002 🐻");
+    const birthdayDate = screen.getByText("Apr. 04, 1997 🐻");
 
     expect(calendarIcon).toBeInTheDocument();
     expect(birthdayTitle).toBeInTheDocument();
     expect(birthdayDate).toBeInTheDocument();
-    expect(birthdayDate).toHaveAttribute("dateTime", "2002-01-27");
+    expect(birthdayDate).toHaveAttribute("dateTime", "1997-04-04");
   });
 
   it("renders the location contact item correctly", () => {
     render(<ContactsList />);
     const locationIcon = screen.getByTestId("icon-location");
     const locationTitle = screen.getByText("Location");
-    const locationAddress = screen.getByText("Taipei, Taiwan 🇹🇼");
+    const locationAddress = screen.getByText("Pune, Maharashtra, India");
 
     expect(locationIcon).toBeInTheDocument();
     expect(locationTitle).toBeInTheDocument();

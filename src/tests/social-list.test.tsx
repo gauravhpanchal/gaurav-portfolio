@@ -17,9 +17,7 @@ describe("SocialList", () => {
     const { socialMedia } = about;
     const {
       githubUsername,
-      twitterUsername,
       linkedinUsername,
-      mediumUsername,
     } = socialMedia;
 
     expect(screen.getByRole("link", { name: "GitHub" })).toHaveAttribute(
@@ -30,21 +28,17 @@ describe("SocialList", () => {
       "href",
       `https://www.linkedin.com/in/${linkedinUsername}/`
     );
-    expect(screen.getByRole("link", { name: "Medium" })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Fiverr" })).toHaveAttribute(
       "href",
-      `https://medium.com/@${mediumUsername}`
+      "https://www.fiverr.com/gauravpanchal33"
     );
-    expect(screen.getByRole("link", { name: "Twitter" })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: "Upwork" })).toHaveAttribute(
       "href",
-      `https://twitter.com/${twitterUsername}`
-    );
-    expect(screen.getByRole("link", { name: "Blog" })).toHaveAttribute(
-      "href",
-      "https://blog.1chooo.com"
+      "https://www.upwork.com/freelancers/~018c46c393ab84c7ec"
     );
     expect(screen.getByRole("link", { name: "CV" })).toHaveAttribute(
       "href",
-      "./Resume-Gaurav-Panchal.pdf"
+      "/GauravPanchalCV.pdf"
     );
   });
 

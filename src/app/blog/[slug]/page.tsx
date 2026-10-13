@@ -12,9 +12,10 @@ import "@/styles/blog/blog-text.css"
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata | undefined> {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+  const { slug } = await params;
+  let post = getBlogPosts().find((post) => post.slug === slug);
   if (!post) {
     return;
   }
@@ -34,11 +35,11 @@ export async function generateMetadata({
     description,
     openGraph: {
       title,
-      siteName: 'Chun-Ho (Hugo) Lin - 1chooo | Open Source Enthusiast',
+      siteName: 'Gaurav Panchal | Full Stack Engineer',
       description,
       type: 'article',
       publishedTime,
-      url: `https://1chooo.com/blog/${post.slug}`,
+      url: `https://portfolio-web-gaurav.vercel.app/blog/${post.slug}`,
       locale: 'en_US',
       images: [
         {
@@ -100,8 +101,13 @@ function formatDate(date: string) {
   }
 }
 
-export default function Blog({ params }: { params: { slug: string } }) {
-  let post = getBlogPosts().find((post) => post.slug === params.slug);
+export default async function Blog({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  let post = getBlogPosts().find((post) => post.slug === slug);
 
   if (!post) {
     notFound();
@@ -111,7 +117,7 @@ export default function Blog({ params }: { params: { slug: string } }) {
     <div>
       <article>
         <section className="blog-text">
-          <PageHeader header="Hugo's Blog" />
+          <PageHeader header="Gaurav's Blog" />
           <h1 className="title font-medium text-2xl tracking-tighter max-w-[650px]">
             <MarkdownRenderer content={post.metadata.title} />
           </h1>
